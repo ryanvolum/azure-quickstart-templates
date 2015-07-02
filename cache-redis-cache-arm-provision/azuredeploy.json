@@ -52,6 +52,7 @@
             "apiVersion": "2014-04-01-preview",
             "type": "Microsoft.Cache/Redis",
             "name": "ryvolumRedis2",
+            "location": "Japan West",
             "properties": {
                     "virtualNetwork": "a4f0ce21-bb2f-4511-8017-6436f879a2b0",       
                     "subnet": "RedisSubnet",
