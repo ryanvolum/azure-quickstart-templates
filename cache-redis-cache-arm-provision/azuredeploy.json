@@ -51,9 +51,8 @@
         {
             "apiVersion": "2014-04-01-preview",
             "type": "Microsoft.Cache/Redis",
-            "location": "[parameters('redisCacheLocation')]",
             "properties": {
-                    "virtualNetworkId": "a4f0ce21-bb2f-4511-8017-6436f879a2b0",       
+                    "virtualNetwork": "a4f0ce21-bb2f-4511-8017-6436f879a2b0",       
                     "subnet": "RedisSubnet",
                     "staticIP": "192.168.3.8",
 
