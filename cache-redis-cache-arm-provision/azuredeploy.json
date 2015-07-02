@@ -54,6 +54,9 @@
             "type": "Microsoft.Cache/Redis",
             "location": "[parameters('redisCacheLocation')]",
             "properties": {
+                    "virtualNetworkId": "site-id-guid",       
+                    "subnet": "subnetNameGoesHere",
+                    "staticIP": "123.123.123.123",
                 "sku": {
                     "name": "[parameters('redisCacheSKU')]",
                     "family": "[parameters('redisCacheFamily')]",
@@ -65,4 +68,5 @@
         }
     ]
 }
+
 
