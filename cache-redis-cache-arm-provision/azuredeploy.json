@@ -50,19 +50,13 @@
     "resources": [
         {
             "apiVersion": "2014-04-01-preview",
-            "name": "[parameters('redisCacheName')]",
             "type": "Microsoft.Cache/Redis",
             "location": "[parameters('redisCacheLocation')]",
             "properties": {
                     "virtualNetworkId": "a4f0ce21-bb2f-4511-8017-6436f879a2b0",       
                     "subnet": "RedisSubnet",
                     "staticIP": "192.168.3.8",
-                "sku": {
-                    "name": "[parameters('redisCacheSKU')]",
-                    "family": "[parameters('redisCacheFamily')]",
-                    "capacity": "[parameters('redisCacheCapacity')]"
-                },
-                "redisVersion": "[parameters('redisCacheVersion')]",
+
                 "enableNonSslPort": true
             }
         }
